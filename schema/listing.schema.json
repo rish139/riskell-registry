@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/rish139/riskell-registry/main/schema/listing.schema.json",
+  "title": "riskell registry listing",
+  "description": "One file per listing in listings/<id>.json. A listing is metadata that points at an author's repository at one pinned commit; the code stays in the author's repository under the author's license. An update is a new pull request.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "kind",
+    "name",
+    "summary",
+    "repo",
+    "rev",
+    "version",
+    "license"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{0,38}$",
+      "description": "Equal to the id in the repository's riskell.json, and to the file name."
+    },
+    "kind": {
+      "enum": [
+        "atom",
+        "reading",
+        "pill",
+        "theme",
+        "preset"
+      ],
+      "description": "Equal to the manifest's kind (an atom listing may also be a reading)."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 140
+    },
+    "repo": {
+      "type": "string",
+      "pattern": "^https://",
+      "description": "The git repository (https). It stays the author's."
+    },
+    "path": {
+      "type": "string",
+      "description": "A folder inside the repository, for a repository that holds several. Only for listings marked bundled: an installable extension has its riskell.json at the repository root."
+    },
+    "rev": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$",
+      "description": "The full commit the listing is pinned to. What people install is this commit, so an author cannot change it silently."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(-[0-9A-Za-z.-]+)?(\\+[0-9A-Za-z.-]+)?$",
+      "description": "Equal to the manifest's version at that commit; the repository should carry a tag v<version> on it."
+    },
+    "license": {
+      "type": "string",
+      "description": "Equal to the manifest's license."
+    },
+    "kit": {
+      "type": "string",
+      "pattern": "^\\^?\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "atoms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "The atom ids it adds (placed as ext:<id>); equal to the manifest's atoms."
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 10
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "homepage": {
+      "type": "string",
+      "pattern": "^https://"
+    },
+    "preview": {
+      "type": "string",
+      "description": "A path inside the repository to a PNG."
+    },
+    "bundled": {
+      "type": "boolean",
+      "description": "True for what ships inside riskell itself: it is installed already, and `risk ext add` says so."
+    }
+  }
+}

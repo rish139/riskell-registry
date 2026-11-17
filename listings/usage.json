@@ -1,0 +1,24 @@
+{
+  "$schema": "../schema/listing.schema.json",
+  "id": "usage",
+  "kind": "atom",
+  "name": "AI usage",
+  "summary": "Claude usage meters from your local Claude Code logs, opt-in in config.json, with a card for windows and reset times.",
+  "repo": "https://github.com/rish139/riskell",
+  "path": "Packages/usage",
+  "rev": "93944fd2ec221e8fc8d997dce4d78d91deef7cfd",
+  "version": "1.0.0",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "kit": "^0.6",
+  "atoms": [
+    "usage"
+  ],
+  "keywords": [
+    "ai"
+  ],
+  "authors": [
+    "riskell"
+  ],
+  "bundled": true,
+  "preview": "docs/images/store/usage.png"
+}

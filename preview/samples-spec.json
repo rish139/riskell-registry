@@ -1,0 +1,74 @@
+[
+ {
+  "id": "pomodoro",
+  "name": "Pomodoro",
+  "kind": "atom",
+  "run": "printf '%s' '{\"text\":\"18:42\",\"icon\":\"timer\",\"tone\":\"accent\",\"value\":0.25,\"lines\":[\"Focus session 3 of 4\",\"Next: 5 min break\"],\"spark\":[3,5,4,6,5,7,6,8],\"grid\":[[\"Today\",\"6 sessions\"],[\"Streak\",\"4 days\"]]}'"
+ },
+ {
+  "id": "gpu-load",
+  "name": "GPU load",
+  "kind": "reading",
+  "run": "printf '%s' '{\"text\":\"38%\",\"icon\":\"cpu\",\"tone\":\"ok\",\"value\":0.38,\"lines\":[\"Apple GPU, 32 cores\",\"Temperature 61\\u00b0C\"],\"values\":[{\"label\":\"GPU\",\"text\":\"38\",\"unit\":\"%\",\"tone\":\"ok\",\"value\":0.38},{\"label\":\"TMP\",\"text\":\"61\",\"unit\":\"\\u00b0C\",\"tone\":\"warn\",\"value\":0.61}],\"spark\":[2,3,2,5,4,6,5,3]}'"
+ },
+ {
+  "id": "clipboard-peek",
+  "name": "Clipboard peek",
+  "kind": "atom",
+  "run": "printf '%s' '{\"text\":\"3 items\",\"icon\":\"doc.on.clipboard\",\"tone\":\"accent\",\"lines\":[\"https://example.com/docs\",\"Meeting notes, 14:00\",\"#1d2021\"]}'"
+ },
+ {
+  "id": "battery-health",
+  "name": "Battery health",
+  "kind": "reading",
+  "run": "printf '%s' '{\"text\":\"92%\",\"icon\":\"battery.100\",\"tone\":\"ok\",\"value\":0.92,\"lines\":[\"Maximum capacity 92 %\",\"Cycle count 214\"],\"grid\":[[\"Cycles\",\"214\"],[\"Design\",\"8694 mAh\"]]}'"
+ },
+ {
+  "id": "up-since",
+  "name": "Up since",
+  "kind": "pill",
+  "run": "printf '%s' '{\"text\":\"3d 4h\",\"icon\":\"clock\",\"tone\":\"dim\",\"lines\":[\"Booted Friday 07:12\",\"Load 1.2 0.9 0.8\"]}'"
+ },
+ {
+  "id": "docker-count",
+  "name": "Docker count",
+  "kind": "pill",
+  "run": "printf '%s' '{\"text\":\"5\",\"icon\":\"shippingbox\",\"tone\":\"warn\",\"value\":0.5,\"lines\":[\"web, db, cache\",\"worker, proxy\"],\"spark\":[2,2,3,5,5,4,5,5]}'"
+ },
+ {
+  "id": "calendar-next",
+  "name": "Next event",
+  "kind": "atom",
+  "run": "printf '%s' '{\"text\":\"14:00\",\"icon\":\"calendar\",\"tone\":\"accent\",\"lines\":[\"Design review\",\"in 25 minutes\",\"Room 4 \\u00b7 video link\"]}'"
+ },
+ {
+  "id": "tokyo-night-storm",
+  "name": "Tokyo Night Storm",
+  "kind": "theme",
+  "theme": "tokyo-night-dark"
+ },
+ {
+  "id": "paper-light",
+  "name": "Paper light",
+  "kind": "theme",
+  "theme": "gruvbox-light"
+ },
+ {
+  "id": "moonlight",
+  "name": "Moonlight",
+  "kind": "theme",
+  "theme": "rose-pine"
+ },
+ {
+  "id": "vpn-status",
+  "name": "VPN status",
+  "kind": "reading",
+  "run": "printf '%s' '{\"text\":\"up\",\"icon\":\"lock.shield\",\"tone\":\"ok\",\"lines\":[\"Tunnel up 2h 10m\",\"Exit: Frankfurt\"]}'"
+ },
+ {
+  "id": "disk-free",
+  "name": "Disk free",
+  "kind": "pill",
+  "run": "printf '%s' '{\"text\":\"497G\",\"icon\":\"internaldrive\",\"tone\":\"ok\",\"value\":0.35,\"lines\":[\"Used 13G of 1.4T\",\"Free 497G\"],\"spark\":[1,1,2,2,2,3,3,3]}'"
+ }
+]

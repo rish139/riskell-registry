@@ -1,0 +1,226 @@
+[
+ {
+  "id": "pomodoro",
+  "kind": "atom",
+  "name": "Pomodoro",
+  "summary": "A focus timer in the bar: a ring that drains, a card with sessions and a long-break rhythm.",
+  "repo": "https://github.com/example/pomodoro",
+  "rev": "0000000000000000000000000000000000000000",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+   "timer",
+   "focus"
+  ],
+  "authors": [
+   "example"
+  ],
+  "kit": "^0.6",
+  "atoms": [
+   "pomodoro"
+  ]
+ },
+ {
+  "id": "gpu-load",
+  "kind": "reading",
+  "name": "GPU load",
+  "summary": "GPU utilisation and temperature on Apple silicon, as a figure with a sparkline and a card.",
+  "repo": "https://github.com/example/gpu-load",
+  "rev": "0000000000000000000000000000000000000000",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+   "gpu",
+   "metal"
+  ],
+  "authors": [
+   "example"
+  ],
+  "kit": "^0.6",
+  "atoms": [
+   "gpu-load"
+  ]
+ },
+ {
+  "id": "clipboard-peek",
+  "kind": "atom",
+  "name": "Clipboard peek",
+  "summary": "The last few things you copied, in a hover card; click one to paste it back.",
+  "repo": "https://github.com/example/clipboard-peek",
+  "rev": "0000000000000000000000000000000000000000",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+   "clipboard"
+  ],
+  "authors": [
+   "example"
+  ],
+  "kit": "^0.6",
+  "atoms": [
+   "clipboard-peek"
+  ]
+ },
+ {
+  "id": "battery-health",
+  "kind": "reading",
+  "name": "Battery health",
+  "summary": "Cycle count and capacity next to the charge, with a warning below 80 %.",
+  "repo": "https://github.com/example/battery-health",
+  "rev": "0000000000000000000000000000000000000000",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+   "battery"
+  ],
+  "authors": [
+   "example"
+  ],
+  "kit": "^0.6",
+  "atoms": [
+   "battery-health"
+  ]
+ },
+ {
+  "id": "up-since",
+  "kind": "pill",
+  "name": "Up since",
+  "summary": "How long the machine has been up, as a pill. No code: one command and a refresh interval.",
+  "repo": "https://github.com/example/up-since",
+  "rev": "0000000000000000000000000000000000000000",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+   "uptime"
+  ],
+  "authors": [
+   "example"
+  ]
+ },
+ {
+  "id": "docker-count",
+  "kind": "pill",
+  "name": "Docker count",
+  "summary": "Running containers, as a pill that turns warm above a number you choose.",
+  "repo": "https://github.com/example/docker-count",
+  "rev": "0000000000000000000000000000000000000000",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+   "docker",
+   "containers"
+  ],
+  "authors": [
+   "example"
+  ]
+ },
+ {
+  "id": "calendar-next",
+  "kind": "atom",
+  "name": "Next event",
+  "summary": "Your next calendar event and a countdown, with the meeting link in its card.",
+  "repo": "https://github.com/example/calendar-next",
+  "rev": "0000000000000000000000000000000000000000",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+   "calendar",
+   "meetings"
+  ],
+  "authors": [
+   "example"
+  ],
+  "kit": "^0.6",
+  "atoms": [
+   "calendar-next"
+  ]
+ },
+ {
+  "id": "tokyo-night-storm",
+  "kind": "theme",
+  "name": "Tokyo Night Storm",
+  "summary": "A dark blue Base16 scheme tuned to pass riskell's contrast floors.",
+  "repo": "https://github.com/example/tokyo-night-storm",
+  "rev": "0000000000000000000000000000000000000000",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+   "dark",
+   "blue"
+  ],
+  "authors": [
+   "example"
+  ]
+ },
+ {
+  "id": "paper-light",
+  "kind": "theme",
+  "name": "Paper light",
+  "summary": "A warm, low-contrast light scheme for daytime.",
+  "repo": "https://github.com/example/paper-light",
+  "rev": "0000000000000000000000000000000000000000",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+   "light"
+  ],
+  "authors": [
+   "example"
+  ]
+ },
+ {
+  "id": "moonlight",
+  "kind": "theme",
+  "name": "Moonlight",
+  "summary": "A cool dark scheme with soft purples.",
+  "repo": "https://github.com/example/moonlight",
+  "rev": "0000000000000000000000000000000000000000",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+   "dark",
+   "purple"
+  ],
+  "authors": [
+   "example"
+  ]
+ },
+ {
+  "id": "vpn-status",
+  "kind": "reading",
+  "name": "VPN status",
+  "summary": "Whether a VPN is up, which one, and for how long.",
+  "repo": "https://github.com/example/vpn-status",
+  "rev": "0000000000000000000000000000000000000000",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+   "vpn",
+   "network"
+  ],
+  "authors": [
+   "example"
+  ],
+  "kit": "^0.6",
+  "atoms": [
+   "vpn-status"
+  ]
+ },
+ {
+  "id": "disk-free",
+  "kind": "pill",
+  "name": "Disk free",
+  "summary": "Free space on the boot volume, as a pill with a bar.",
+  "repo": "https://github.com/example/disk-free",
+  "rev": "0000000000000000000000000000000000000000",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+   "disk",
+   "storage"
+  ],
+  "authors": [
+   "example"
+  ]
+ }
+]

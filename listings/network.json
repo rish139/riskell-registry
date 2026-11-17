@@ -1,0 +1,27 @@
+{
+  "$schema": "../schema/listing.schema.json",
+  "id": "network",
+  "kind": "atom",
+  "name": "Network",
+  "summary": "Wi-Fi or Ethernet state and throughput, with a card for interfaces, Bluetooth and VPN.",
+  "repo": "https://github.com/rish139/riskell",
+  "path": "Packages/network",
+  "rev": "93944fd2ec221e8fc8d997dce4d78d91deef7cfd",
+  "version": "1.0.0",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "kit": "^0.6",
+  "atoms": [
+    "net"
+  ],
+  "keywords": [
+    "wifi",
+    "network",
+    "bluetooth",
+    "vpn"
+  ],
+  "authors": [
+    "riskell"
+  ],
+  "bundled": true,
+  "preview": "docs/images/store/network.png"
+}
