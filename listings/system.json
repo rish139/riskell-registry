@@ -6,9 +6,9 @@
   "summary": "Battery, CPU and memory, and fans and temperatures, with their cards.",
   "repo": "https://github.com/rish139/riskell",
   "path": "Packages/system",
-  "rev": "93944fd2ec221e8fc8d997dce4d78d91deef7cfd",
+  "rev": "af9bd2e280c97edc758400736a35976697c5044e",
   "version": "1.0.0",
-  "license": "PolyForm-Noncommercial-1.0.0",
+  "license": "FSL-1.1-MIT",
   "kit": "^0.6",
   "atoms": [
     "bat",
